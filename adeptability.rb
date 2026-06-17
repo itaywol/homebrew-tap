@@ -5,21 +5,21 @@
 class Adeptability < Formula
   desc "Cross-harness AI skill portability CLI"
   homepage "https://github.com/itaywol/adeptability"
-  version "1.1.0"
+  version "1.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/itaywol/adeptability/releases/download/v1.1.0/adeptability_1.1.0_darwin_amd64.tar.gz"
-      sha256 "35b87b1687133f84db422a930fa2b810fdea13a8e8d1f63e0b5d432fae9bbd61"
+      url "https://github.com/itaywol/adeptability/releases/download/v1.2.0/adeptability_1.2.0_darwin_amd64.tar.gz"
+      sha256 "4f47669c4d10586888b2f6fe567d93d66fc154d8c3faa0e8a69239931da3efec"
 
       define_method(:install) do
         bin.install "adept"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/itaywol/adeptability/releases/download/v1.1.0/adeptability_1.1.0_darwin_arm64.tar.gz"
-      sha256 "edb9af4f2a1b914ddf698842c3939850e8a8318cf6dd850c5196c42cac5b78b4"
+      url "https://github.com/itaywol/adeptability/releases/download/v1.2.0/adeptability_1.2.0_darwin_arm64.tar.gz"
+      sha256 "093232c4da2f930b772d6387cf760dcf382fe4089641bde16c5da61f04aec516"
 
       define_method(:install) do
         bin.install "adept"
@@ -29,15 +29,15 @@ class Adeptability < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/itaywol/adeptability/releases/download/v1.1.0/adeptability_1.1.0_linux_amd64.tar.gz"
-      sha256 "4660edeba1214e0bd580147f1ed36e014dae83ad1c8e7da78f589e757ad30ea3"
+      url "https://github.com/itaywol/adeptability/releases/download/v1.2.0/adeptability_1.2.0_linux_amd64.tar.gz"
+      sha256 "230b20839e2c6fc80c1cb77f1c8fd6beb817a3c30da56fa4c1ffa5c04632fd2a"
       define_method(:install) do
         bin.install "adept"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/itaywol/adeptability/releases/download/v1.1.0/adeptability_1.1.0_linux_arm64.tar.gz"
-      sha256 "293bfb6f5be8ffcc6c0189aba38cc3c9ef39b737c9d41fe005fc3d19b1ff23d1"
+      url "https://github.com/itaywol/adeptability/releases/download/v1.2.0/adeptability_1.2.0_linux_arm64.tar.gz"
+      sha256 "e246742a9adb69639b70b3a95b551a9157d5e26ea23d27378ed2285efd662cac"
       define_method(:install) do
         bin.install "adept"
       end
